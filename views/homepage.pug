@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Custom Objects
+    table(border="1")
+      tr
+        th ID
+        th Example Property
+      each obj in data
+        tr
+          td= obj.id
+          td= obj.properties.example_property
+    a(href="/update-cobj") Add or Update Custom Object
